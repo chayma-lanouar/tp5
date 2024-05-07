@@ -1,0 +1,24 @@
+focus()#blur() (also,we can use them in the form inputs)
+setTimeOut() pour faire un retard de quelques millisecondes (delay)
+prop/cookie:fichier textuel sauvagardé dans la machine du client  défini par une durée , on stocke des infos ici(accéder aux infos du user )
+chaque nav a ces cookies spécifiques
+mimeTypes:pour savoir quels sont les types supportés par le navigateur
+
+attribute "name": 
+au lieu de faire: document.image[0]
+<img name="personne">
+document.image["personne"]
+*pour les formulaire il est obligatoire de mettre des noms pour accéder aux valeurs
+<form name="f">
+{ document.focus[0]
+document.focus["f"]
+document.f}
+dans radio: name is the same for all options 
+la partie value vs le texte normal du select: la partie value est sémantique qui ne concerne pas l'utilisateur 
+mouseOver+forcément le code réciproque du mouseOut
+
+keydown vs keyUp ????????????????
+
+pour attribuer plusieurs propriétés à un elem : 
+dans css .nomClasse{bla bla bla;}
+dans js: variable.className='nomClasse'

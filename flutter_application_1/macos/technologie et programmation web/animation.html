@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <container>
+        <div id="box1" class="box" ><img src="closed.jpg"/></div>
+        <div id="box2" class="box"><img src="open.jpg"/></div>
+        <div id="heart"><img  src="heart.png"/></div>
+        <div id="heart1"><img  src="heart.png"/></div>
+        <div id="heart2"><img  src="heart.png"/></div>
+    </container>
+    <style>
+        #box1{
+            background-image: url(open.jpg);
+            margin-left:35%;
+            margin-top: 20%;
+            background-size: cover;
+            width: 500px;
+            height: 500px;            
+        }
+        #box2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+       
+        #box1:hover + #box2  {
+        opacity: 1;
+        margin-left:35%;
+        margin-top: 20%;}
+        #heart1{
+            margin-left: 400px;
+            margin-bottom: 10%;
+            animation: swing 2s infinite linear;
+        }
+        #heart{
+            margin-left: 400px;
+            margin-bottom: 10%;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        #heart2{
+            margin-left: 400px;
+            margin-bottom: 10%;
+            animation:giff 2s infinite ease-in-out;
+        }
+        @keyframes swing {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-70px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+        
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+            }
+        @keyframes giff{
+            0%{
+                transform:translateX(0)
+            }
+            50%{
+                transform:translateX(-70px)
+            }
+            100% {
+            transform: translateX(0);
+        }
+        }
+                    
+
+            
+    </style>
+</body>
+</html>

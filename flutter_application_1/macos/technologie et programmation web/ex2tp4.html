@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function segmentation(phrase) {
+        // Découpage de la phrase en mots
+        const mots = phrase.split(" ");
+
+        // Parcours de chaque mot
+        mots.forEach((mot) => {
+            // Affichage du mot en majuscule et en titre niveau 4
+            document.write ("<h4 style='text-align:center'>");
+            document.write(mot.toUpperCase());
+            document.write ("</h4><hr/>");
+        });
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form action="" method="post">
+                    <label for="f1"><h3>Phrase:</h3></label>
+                    <input type="text" id="f1" name="f1" required >   
+                    <button type="submit" id="b1" onclick=" segmentation(document.getElementById('f1').value)">submit</button>
+                    </form>
+
+            </td>
+            <td>
+                <div id="output"></div>
+            </td>
+           
+        </tr>
+        
+
+    </table>
+        
+    
+</body>
+</html>

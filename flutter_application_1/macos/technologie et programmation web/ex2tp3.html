@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cercle"><h1>Texte</h1></div>
+
+    <style>
+        
+       
+        #cercle{
+            background:radial-gradient(white,black);
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 500px;
+            animation: swing 2s infinite linear;
+            margin-top: 100px;
+            margin-left: 35%;            
+        }
+        @keyframes swing {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-70px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+        }
+
+        h1 {
+            text-shadow: -5px -5px 18px rgba(244, 68, 14, 0.992);
+            color:rgba(242, 172, 68, 0.992);
+            margin: 0;
+            font-size: 100px;
+            animation: fade-in 2s infinite linear;
+           
+        }
+        @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+
+    </style>
+</body>
+   
+</html>
